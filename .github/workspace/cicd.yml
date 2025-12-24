@@ -36,8 +36,8 @@ jobs:
     - name: Deploy to Elastic Beanstalk
       uses: einaregilsson/beanstalk-deploy@v21
       with:
-        application_name: java-eb-app
-        environment_name: java-eb-env
+        application_name: springboot
+        environment_name: springboot-env
         version_label: ${{ github.sha }}
         region: ${{ secrets.AWS_REGION }}
         deployment_package: app.zip
