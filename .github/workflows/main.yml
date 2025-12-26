@@ -37,7 +37,7 @@ jobs:
       uses: einaregilsson/beanstalk-deploy@v21
       with:
         application_name: springboot
-        environment_name: springboot-env
+        environment_name: Springboot-env
         version_label: ${{ github.sha }}
         region: ${{ secrets.AWS_REGION }}
-        deployment_package: springboot-build.zip
+        deployment_package: SpringBootForm-1.0.zip
